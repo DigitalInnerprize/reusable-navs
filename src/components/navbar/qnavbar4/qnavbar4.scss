@@ -1,0 +1,38 @@
+#q-navbar-4 {
+  padding: 0px 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70px;
+
+  nav {
+    order: 1;
+  }
+}
+
+#navbar-4-logo {
+  order: 2;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.nav-links-4 {
+  list-style: none;
+  li {
+    padding: 0px 20px;
+    display: inline-block;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+  }
+  a {
+    transition: all 0.3s ease 0s;
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      color: #0088a9;
+    }
+  }
+}

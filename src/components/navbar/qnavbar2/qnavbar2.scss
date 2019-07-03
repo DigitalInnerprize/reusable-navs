@@ -1,0 +1,101 @@
+#q-navbar-2 {
+  padding: 0px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.overlay {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+
+  a {
+    padding: 15px;
+    font-size: 32px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      color: #0088a9;
+    }
+  }
+
+  &.menuOpen {
+    width: 100%;
+  }
+
+  .close {
+    top: 20px;
+    right: 45px;
+    position: absolute;
+    font-size: 58px;
+    text-decoration: none;
+  }
+
+  .overlay-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#navbar-2-logo {
+  cursor: pointer;
+}
+
+#navbar-menu-cta {
+  display: none;
+  text-decoration: none;
+}
+
+.nav-links-2 {
+  list-style: none;
+  li {
+    padding: 0px 20px;
+    display: inline-block;
+  }
+  a {
+    transition: all 0.3s ease 0s;
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      color: #0088a9;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbar-cta-2, .nav-links-2 {
+    display: none;
+  }
+  #navbar-menu-cta {
+    display: inherit;
+    cursor:pointer;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    a {
+      font-size: 20px;
+    }
+
+    .close {
+      top: 15px;
+      right: 35px;
+      font-size: 40px;
+    }
+  }
+}

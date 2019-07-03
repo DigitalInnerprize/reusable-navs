@@ -1,0 +1,29 @@
+#q-navbar-3 {
+  padding: 0px 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70px;
+}
+
+#navbar-3-logo {
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.nav-links-3 {
+  list-style: none;
+  li {
+    padding: 0px 20px;
+    display: inline-block;
+  }
+  a {
+    transition: all 0.3s ease 0s;
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      color: #0088a9;
+    }
+  }
+}
